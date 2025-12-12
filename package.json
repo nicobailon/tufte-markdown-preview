@@ -1,0 +1,23 @@
+{
+  "name": "tufte-markdown-preview",
+  "displayName": "Tufte Markdown Preview",
+  "description": "Tufte-inspired typography for VS Code markdown preview",
+  "version": "0.0.1",
+  "publisher": "nicobailon",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "markdown.previewStyles": [
+      "./tufte.css"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT"
+}

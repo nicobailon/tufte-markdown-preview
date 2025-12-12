@@ -1,0 +1,229 @@
+:root {
+  --tufte-bg-light: #fffff8;
+  --tufte-text-light: #111111;
+  --tufte-border-light: #c9c9c0;
+  --tufte-code-bg-light: #f7f7f0;
+  --tufte-link-light: #4a4a4a;
+
+  --tufte-bg-dark: #1c1c1c;
+  --tufte-text-dark: #e8e8e0;
+  --tufte-border-dark: #3a3a3a;
+  --tufte-code-bg-dark: #252525;
+  --tufte-link-dark: #c9c9c0;
+}
+
+body {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+body.vscode-light {
+  background: var(--tufte-bg-light);
+  color: var(--tufte-text-light);
+}
+
+body.vscode-dark {
+  background: var(--tufte-bg-dark);
+  color: var(--tufte-text-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin-top: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+h2 {
+  font-size: 1.7em;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+h4, h5, h6 {
+  font-size: 1.1em;
+  font-variant: small-caps;
+  letter-spacing: 0.05em;
+}
+
+body.vscode-light h1,
+body.vscode-light h2 {
+  border-bottom: 1px solid var(--tufte-border-light);
+}
+
+body.vscode-dark h1,
+body.vscode-dark h2 {
+  border-bottom: 1px solid var(--tufte-border-dark);
+}
+
+p {
+  margin: 1.4rem 0;
+  text-align: justify;
+  hyphens: auto;
+}
+
+a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body.vscode-light a {
+  color: var(--tufte-link-light);
+}
+
+body.vscode-dark a {
+  color: var(--tufte-link-dark);
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+body.vscode-light blockquote {
+  border-left: 3px solid var(--tufte-border-light);
+  color: #4a4a4a;
+}
+
+body.vscode-dark blockquote {
+  border-left: 3px solid var(--tufte-border-dark);
+  color: #b0b0a8;
+}
+
+blockquote p {
+  margin: 0.5rem 0;
+}
+
+code {
+  font-family: Consolas, "Liberation Mono", Menlo, "Courier New", monospace;
+  font-size: 0.9em;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+
+body.vscode-light code {
+  background: var(--tufte-code-bg-light);
+  color: #333;
+}
+
+body.vscode-dark code {
+  background: var(--tufte-code-bg-dark);
+  color: #d4d4cc;
+}
+
+pre {
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+body.vscode-light pre {
+  background: var(--tufte-code-bg-light);
+}
+
+body.vscode-dark pre {
+  background: var(--tufte-code-bg-dark);
+}
+
+pre code {
+  padding: 0;
+  background: none;
+  font-size: 0.85em;
+}
+
+ul, ol {
+  margin: 1.4rem 0;
+  padding-left: 1.8rem;
+}
+
+li {
+  margin: 0.4rem 0;
+}
+
+hr {
+  border: none;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+hr::before {
+  content: "* * *";
+  letter-spacing: 0.5em;
+}
+
+body.vscode-light hr::before {
+  color: var(--tufte-border-light);
+}
+
+body.vscode-dark hr::before {
+  color: var(--tufte-border-dark);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 1.5rem auto;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+body.vscode-light th {
+  border-bottom: 2px solid var(--tufte-border-light);
+}
+
+body.vscode-light td {
+  border-bottom: 1px solid #e8e8e0;
+}
+
+body.vscode-dark th {
+  border-bottom: 2px solid var(--tufte-border-dark);
+}
+
+body.vscode-dark td {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+::selection {
+  background: rgba(180, 160, 120, 0.3);
+}
