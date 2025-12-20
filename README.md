@@ -1,20 +1,26 @@
 # Tufte Markdown Preview
 
-A VS Code extension that applies elegant, Tufte-inspired typography to the built-in markdown preview.
+A VS Code extension that replaces the default markdown preview with elegant, Tufte-inspired typography.
 
-## Features
+![Preview](preview.png)
 
-- Cormorant Garamond serif typography with centered headings
-- Warm sepia-toned color palette
+## Why
+
+The built-in VS Code markdown preview is functional but bland. This extension transforms it into something you'd actually want to read - warm sepia tones, proper serif typography, and subtle details like gradient underlines and floral dividers.
+
+Inspired by [Tufte CSS](https://edwardtufte.github.io/tufte-css/), [Conductor](https://conductor.app/), and [Typora](https://typora.io/).
+
+## What it does
+
+- Applies Cormorant Garamond for body text, JetBrains Mono for code
+- Warm paper background (#faf9f6 light / #171614 dark) with sepia accents
 - Gradient heading underlines that fade from center
-- Floral ornament dividers
+- Floral ornament dividers between sections
 - Book-style paragraph indentation
-- Custom styled lists with accent-colored bullets
-- Gradient blockquote borders
-- Subtle shadows on code blocks and images
-- Automatic light/dark theme support
+- Custom styled lists, blockquotes, and code blocks
+- Automatically adapts to your VS Code light/dark theme
 
-## Installation
+## Install
 
 ```bash
 git clone https://github.com/nicobailon/tufte-markdown-preview.git
@@ -25,28 +31,7 @@ code --install-extension tufte-markdown-preview-0.0.1.vsix
 
 ## Usage
 
-After installation, open any markdown file and use `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows/Linux) to open the preview.
-
-## Typography
-
-- **Body font**: Cormorant Garamond, Crimson Text, Libre Baskerville, Georgia
-- **Code font**: JetBrains Mono, Fira Code, SF Mono, Consolas
-- **Base size**: 19px
-- **Line height**: 1.75
-- **Max width**: 800px
-
-## Themes
-
-The extension automatically adapts to your VS Code theme:
-
-- **Light**: Warm paper (#faf9f6) with sepia accents (#8b7355)
-- **Dark**: Deep charcoal (#171614) with golden accents (#c9a87c)
-
-## Inspired By
-
-- [Tufte CSS](https://edwardtufte.github.io/tufte-css/)
-- [Conductor App](https://conductor.app/)
-- [Typora](https://typora.io/)
+Open any markdown file and use `Cmd+Shift+V` (Mac) or `Ctrl+Shift+V` (Windows/Linux) to open the preview.
 
 ## License
 
