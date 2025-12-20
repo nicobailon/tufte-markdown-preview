@@ -22,11 +22,10 @@ Inspired by [Tufte CSS](https://edwardtufte.github.io/tufte-css/), [Conductor](h
 
 ## Install
 
+1. Download the latest `.vsix` from [Releases](https://github.com/nicobailon/tufte-markdown-preview/releases)
+2. Run:
 ```bash
-git clone https://github.com/nicobailon/tufte-markdown-preview.git
-cd tufte-markdown-preview
-npx @vscode/vsce package
-code --install-extension tufte-markdown-preview-0.0.1.vsix
+code --install-extension tufte-markdown-preview-*.vsix
 ```
 
 ## Usage
