@@ -2,6 +2,8 @@
 
 A VS Code extension that replaces the default markdown preview with elegant, Tufte-inspired typography.
 
+[![Download](https://img.shields.io/github/v/release/nicobailon/tufte-markdown-preview?label=Download&style=for-the-badge)](https://github.com/nicobailon/tufte-markdown-preview/releases/latest/download/tufte-markdown-preview-0.0.1.vsix)
+
 ![Preview](preview.png)
 
 ## Why
