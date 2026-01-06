@@ -365,3 +365,35 @@ body.vscode-dark ::-webkit-scrollbar-thumb {
   background: var(--tufte-border-dark);
   border-radius: 3px;
 }
+
+.mermaid {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.mermaid-error {
+  font-family: 'IBM Plex Mono', 'JetBrains Mono', 'SF Mono', Consolas, monospace;
+  font-size: 0.85em;
+  padding: 1rem 1.4rem;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+body.vscode-light .mermaid-error {
+  color: #9c4040;
+  background: rgba(180, 68, 68, 0.08);
+  border: 1px solid rgba(180, 68, 68, 0.2);
+}
+
+body.vscode-dark .mermaid-error {
+  color: #e8a0a0;
+  background: rgba(180, 68, 68, 0.15);
+  border: 1px solid rgba(180, 68, 68, 0.3);
+}

@@ -1,5 +1,11 @@
+src/
+node_modules/
 .github/
+*.ts
+tsconfig.json
+esbuild.mjs
 .gitignore
-.DS_Store
-preview.png
-*.vsix
+.git/
+**/*.map
+test.md
+package-lock.json

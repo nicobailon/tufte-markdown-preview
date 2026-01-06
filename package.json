@@ -1,19 +1,81 @@
 {
   "name": "tufte-markdown-preview",
   "displayName": "Tufte Markdown Preview",
-  "description": "Tufte-inspired typography for VS Code markdown preview",
-  "version": "0.0.1",
+  "description": "Tufte-inspired typography for VS Code markdown preview with Mermaid diagram support",
+  "version": "0.1.0",
   "publisher": "nicobailon",
+  "main": "./dist/extension.js",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.74.0"
   },
   "categories": [
-    "Themes"
+    "Themes",
+    "Visualization"
   ],
+  "activationEvents": [],
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/vscode": "^1.60.0",
+    "esbuild": "^0.24.0",
+    "mermaid": "^11",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "watch": "node esbuild.mjs --watch",
+    "vscode:prepublish": "npm run build"
+  },
   "contributes": {
     "markdown.previewStyles": [
       "./tufte.css"
-    ]
+    ],
+    "markdown.previewScripts": [
+      "./dist/preview.bundle.js"
+    ],
+    "markdown.markdownItPlugins": true,
+    "configuration": {
+      "title": "Tufte Markdown Preview",
+      "properties": {
+        "tufte-markdown-preview.mermaid.lightTheme": {
+          "type": "string",
+          "enum": [
+            "tufte",
+            "default",
+            "neutral",
+            "forest"
+          ],
+          "default": "tufte",
+          "description": "Mermaid theme for light mode"
+        },
+        "tufte-markdown-preview.mermaid.darkTheme": {
+          "type": "string",
+          "enum": [
+            "tufte",
+            "dark",
+            "neutral",
+            "forest"
+          ],
+          "default": "tufte",
+          "description": "Mermaid theme for dark mode"
+        },
+        "tufte-markdown-preview.mermaid.maxTextSize": {
+          "type": "number",
+          "default": 50000,
+          "description": "Maximum characters in a single diagram"
+        },
+        "tufte-markdown-preview.mermaid.securityLevel": {
+          "type": "string",
+          "enum": [
+            "strict",
+            "loose",
+            "antiscript",
+            "sandbox"
+          ],
+          "default": "strict",
+          "description": "Mermaid security level"
+        }
+      }
+    }
   },
   "repository": {
     "type": "git",
